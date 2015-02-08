@@ -14,3 +14,4 @@ Whenever I get new Raspberry Pis this is what I have to do. Start to headless..
 9. Go to network admin page (for AT&T uverse it's at http://192.168.1.254) and either assign static IP or static static IP.
 or Go to LX terminal and type `sudo ifconfig` to find IP address and look up at admin page
 10. 'sudo apt-get install xrdp' (Xrdp is a daemon, a computer process that runs in the background that can support Microsoft Remote Desktop Client on both Mac and PC.)
+11. if haven't done wifi yet, do it.. go to wifi config, scan, double click, enter password and done
