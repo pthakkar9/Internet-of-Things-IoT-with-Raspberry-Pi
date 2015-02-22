@@ -4,8 +4,8 @@ import datetime
 from twilio.rest import TwilioRestClient
 from datetime import datetime
 
-ACCOUNT_SID = "6..."
-AUTH_TOKEN = "4..."
+ACCOUNT_SID = "ABCD...."
+AUTH_TOKEN = "abcd...."
 
 io.setmode(io.BCM)
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
@@ -21,10 +21,9 @@ while True:
 		print("PIR ALARM!" + str(datetime.now()))
 	if io.input(door_pin):
 		print("DOOR ALARM!" + str(datetime.now()))
-		client.messages.create(to="+1570...",
-			from_="+1614...",
+		client.messages.create(to="+1987...",
+			from_="+1987....",
 			body="Hello Master, this is your Mail Box. Mail has been delivered on "+ str(datetime.now()) + "!")
-		time.sleep(30) #wait for mailman to deliver your mail :-)
 
-	time.sleep(0.5)
+	time.sleep(25)
 

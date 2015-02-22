@@ -10,4 +10,8 @@ sudo apt-get install python-pip // so that you can use pip (python package manag
 //sudo pip-3.3 install twilio
 sudo pip install twilio // so that you can use twilio
 
+//copy file from local to remote over ssh - use it from local command prompt
+scp /path/to/file username@a:/path/to/destination
+//copy file from remote to local over ssh - use it from local command prompt
+scp username@b:/path/to/file /path/to/destination
 
